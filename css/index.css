@@ -1,0 +1,11 @@
+body {
+
+}
+
+#header_picture, #picture_img {
+    float: left: 0;
+}
+
+#picture_img {
+    width: 100%;
+}
