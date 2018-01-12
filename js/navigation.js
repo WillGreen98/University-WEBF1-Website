@@ -2,34 +2,33 @@ DEBUG = true;
 
 if(DEBUG) {
     var file_linkers = ["index.html", "discovery_log.html", "literature_review.html"];
-    var file_linker_headings = ["Home", "Discovery Log", "Literature Review"];21§§
+    var file_linker_headings = ["Home", "Discovery Log", "Literature Review"];
 
     function createLiA() {
-        var nav_li = document.createElement("li");
+        let nav_li = document.createElement("li");
         nav_li.classList.add("nav_li");
 
-        var heading = document.createTextNode(file_linker_headings);
+        //var heading = document.createTextNode(file_linker_headings);
 
-        for(i=0; i<=file_linkers.length; i++) {
+        for(let i=0; i < file_linkers.length; i++) {
             var newNav_a = document.createElement("a");
             newNav_a.classList.add("newNav_a");
-            newNav_a.appendChild(heading);
+            newNav_a.textContent = file_linker_headings[i];
             newNav_a.setAttribute("href", file_linkers[i]);
             nav_li.appendChild(newNav_a);
-            i++;
         }
         return nav_li;
     }
 
     function loadNavigation() {
-        // creat and set class name on one line?
+        // create and set class name on one line?
         var navigation = document.createElement("nav");
         navigation.classList.add("navigation");
 
         var nav_ul = document.createElement("ul");
         nav_ul.classList.add("nav_ul");
 
-        for(var i=1; i<=file_linkers.length; i++) {
+        for(var i=0; i < file_linkers.length; i++) {
             nav_liA = createLiA();
             nav_ul.appendChild(nav_liA);
         }
