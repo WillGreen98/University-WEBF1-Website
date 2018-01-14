@@ -1,1 +1,2 @@
-ErrorDocument 404 /redirect/404.html
+ErrorDocument 404 /error docs/404.html
+SpellCheck on
