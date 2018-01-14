@@ -1,17 +1,15 @@
 DEBUG = true;
 
 if(DEBUG) {
-    var file_linkers = ["index.html", "discovery_log.html", "literature_review.html"];
-    var file_linker_headings = ["Home", "Discovery Log", "Literature Review"];
+    let file_linkers = ["index.html", "discovery_log.html", "literature_review.html"];
+    let file_linker_headings = ["Home", "Discovery Log", "Literature Review"];
 
     function createLiA() {
         let nav_li = document.createElement("li");
         nav_li.classList.add("nav_li");
 
-        //var heading = document.createTextNode(file_linker_headings);
-
         for(let i=0; i < file_linkers.length; i++) {
-            var newNav_a = document.createElement("a");
+            let newNav_a = document.createElement("a");
             newNav_a.classList.add("newNav_a");
             newNav_a.textContent = file_linker_headings[i];
             newNav_a.setAttribute("href", file_linkers[i]);
@@ -22,27 +20,27 @@ if(DEBUG) {
 
     function loadNavigation() {
         // create and set class name on one line?
-        var navigation = document.createElement("nav");
+        let navigation = document.createElement("nav");
         navigation.classList.add("navigation");
 
-        var nav_ul = document.createElement("ul");
+        let nav_ul = document.createElement("ul");
         nav_ul.classList.add("nav_ul");
 
-        for(var i=0; i < file_linkers.length; i++) {
+        for(let i=0; i < file_linkers.length; i++) {
             nav_liA = createLiA();
             nav_ul.appendChild(nav_liA);
         }
 
         navigation.appendChild(nav_ul);
 
-        var currentNav = document.getElementsByClassName("navigation")[0];
+        let currentNav = document.getElementsByClassName("navigation")[0];
         document.body.insertBefore(navigation, currentNav);
     }
 
     document.body.onload = loadNavigation;
 } else {
     function loadNavigation() {
-        var nav = document.getElementById('navigation');
+        let nav = document.getElementById('navigation');
         nav.insertAdjacentHTML('afterbegin',`
         <nav class="navigation">
             <ul class="nav_ul">
