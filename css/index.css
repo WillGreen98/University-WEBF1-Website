@@ -9,3 +9,8 @@ body {
 #picture_img {
     width: 40%;
 }
+
+#map_div {
+    width: 100%;
+    height: 200px;
+}
