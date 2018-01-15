@@ -19,7 +19,6 @@ if(DEBUG) {
     }
 
     function loadNavigation() {
-        // create and set class name on one line?
         let navigation = document.createElement("nav");
         navigation.classList.add("navigation");
 
