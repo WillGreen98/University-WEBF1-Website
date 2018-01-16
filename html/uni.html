@@ -19,7 +19,7 @@
       }
     </style>
 
-    <title> | Uni</title>
+    <title>WEBF1 CW | Uni</title>
 </head>
 <body>
     <h1 id="uni-header">This page is dedicated towards What I have been up to during University</h1>
@@ -30,10 +30,10 @@
     <div id="map"></div>
     <script>
         let map;
-        mappings = [
-            {Location: Kingston, lat: 0, long: 0},
-            {Location: Portsmouth, lat: 0, long: 0}
-        ];
+        mappings = {
+            "Kingston" : {"lat" : 0, "long" : 0},
+            "Portsmouth" : {"lat" : 0, "long" : 0},
+        };
 
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
@@ -47,7 +47,7 @@
 
         for(var pins in mappings) {
             pins = new google.maps.Marker({
-                position: longLat,
+                position: long, lat,
                 map: map,
             });
         }
