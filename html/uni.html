@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 20%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
     <title> | Uni</title>
 </head>
 <body>
@@ -12,7 +27,34 @@
     <nav id="navigation"></nav>
     <script type="text/javascript" src="./js/navigation.js"></script>
 
-    <div id="modules_container">
+    <div id="map"></div>
+    <script>
+        let map;
+        mappings = [
+            {Location: Kingston, lat: 0, long: 0},
+            {Location: Portsmouth, lat: 0, long: 0}
+        ];
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: -34.397,
+                    lng: 150.644,
+                },
+                zoom: 8
+            });
+        }
+
+        for(var pins in mappings) {
+            pins = new google.maps.Marker({
+                position: longLat,
+                map: map,
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEO1yLxyuebVby4EU5IPtGaBPcY5_0h0Y&callback=initMap" async defer></script>
+
+    <section id="modules_container">
         <ul id="modules_ul">
             <li class="modules_li">Computer Archetecture</li>
             <li class="modules_li">Computer Tutorial</li>
@@ -25,7 +67,7 @@
                     <li class="modules_programming_ul">Programming Practical</li>
                 </ul>
         </ul>
-    </div>
+    </section>
 
 
 
