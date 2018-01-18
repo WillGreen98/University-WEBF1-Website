@@ -5,24 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 35%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-
+    <link rel="stylesheet" href="../css/master.css">
     <title>WEBF1 CW | Uni</title>
 </head>
 <body>
-    <h1 id="uni-header">This page is dedicated towards What I have been up to during University</h1>
+    <header class="page_heading">
+        <h1 class="header_heading">This page is dedicated towards What I have been up to during University</h1>
+
+        <picture class="header_picture">
+            <source media="(min-width: 100%)" srcset="../images/uop.png">
+            <img src="../images/uop.png" alt="UoP Logo">
+        </picture>
+    </header>
 
     <nav id="navigation"></nav>
     <script type="text/javascript" src="./js/navigation.js"></script>
@@ -31,16 +25,15 @@
     <script>
         let map;
         mappings = {
-            "Kingston" : {"lat" : 0, "long" : 0},
+            "Kingston" : {"lat" : 51.412330, "long" : -0.300689},
             "Portsmouth" : {"lat" : 0, "long" : 0},
         };
 
         function initMap() {
+            let loading_Point = mappings.Portsmouth;
             map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: -34.397,
-                    lng: 150.644,
-                },
+                center: loading_Point,
+                mapTypeId: "roadmap",
                 zoom: 8
             });
         }
@@ -53,6 +46,14 @@
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEO1yLxyuebVby4EU5IPtGaBPcY5_0h0Y&callback=initMap" async defer></script>
+
+    <div id="desc">
+        <p id="description">As you may have seen and will most likely know, I am a student at the University of Portsmouth. This website is 
+        apart of a module project to account for a certain percentage of my grade, I would like to think my website's features are up to a decent 
+        standard when concerning "web dev". Constructing a website is not new to me as I have had previous experience both formal and informal 
+        education.
+        </p>
+    </div>
 
     <section id="modules_container">
         <ul id="modules_ul">
@@ -68,8 +69,5 @@
                 </ul>
         </ul>
     </section>
-
-
-
 </body>
 </html>
