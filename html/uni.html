@@ -26,11 +26,21 @@
         let map;
         mappings = {
             "Kingston" : {"lat" : 51.412330, "long" : -0.300689},
-            "Portsmouth" : {"lat" : 0, "long" : 0},
+            "Catherine_House" : {"lat" : 50.7991879, "long" : -1.0924685},
+
+            "Portsmouth_Uni" : {"lat" : 50.7944606, "long" : -1.0976492},
+            // Needs changing -> Find Coords
+            "Building-Richmond" : {"lat" : 50.7944606, "long" : -1.0976492},
+            "Building-Lion-Gate" : {"lat" : 50.7944606, "long" : -1.0976492},
+            "Building-Buckingham" : {"lat" : 50.7944606, "long" : -1.0976492},
+            "Building-Portland" : {"lat" : 50.7944606, "long" : -1.0976492},
+            "Building-St-Andrews-Court" : {"lat" : 50.7944606, "long" : -1.0976492},
+            "Building-Park" : {"lat" : 50.7944606, "long" : -1.0976492},
+            "Building-St-Burneby" : {"lat" : 50.7944606, "long" : -1.0976492},
         };
 
         function initMap() {
-            let loading_Point = mappings.Portsmouth;
+            let loading_Point = mappings.Portsmouth_Uni;
             map = new google.maps.Map(document.getElementById('map'), {
                 center: loading_Point,
                 mapTypeId: "roadmap",
@@ -39,8 +49,12 @@
         }
 
         for(var pins in mappings) {
+            let lat = mappings.lat;
+            let long = mappings.long;
+
+            longLat = {"lat" : lat, "long" : long},
             pins = new google.maps.Marker({
-                position: long, lat,
+                position: longLat,
                 map: map,
             });
         }
@@ -53,6 +67,10 @@
         standard when concerning "web dev". Constructing a website is not new to me as I have had previous experience both formal and informal 
         education.
         </p>
+
+        <p id="description_uni">So far at uni, I have been introduced to five topics, my favouirtes are CAR and INTPROG as I prefer programming 
+        and or designing hardware to graphical interfaces, I like INTPROG because it is my programming unit. Below, I have listed all current
+        modules being taugth, also, links to a dedicated page for each module is provided.</p>
     </div>
 
     <section id="modules_container">
