@@ -1,1 +1,12 @@
 body {}
+
+/* CSS for uni.html map */
+#map {
+    height: 35%;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
