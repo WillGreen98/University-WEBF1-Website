@@ -24,7 +24,7 @@ if(DEBUG) {
 
         let nav_ul = document.createElement("ul");
         nav_ul.classList.add("nav_ul");
-
+        
         nav_liA = createLiA();
         nav_ul.appendChild(nav_liA);
 
