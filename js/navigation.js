@@ -1,8 +1,8 @@
 DEBUG = false;
 
 if(DEBUG) {
-    let file_linkers = ["index.html", "discovery_log.html", "literature_review.html"];
-    let file_linker_headings = ["Home", "Discovery Log", "Literature Review"];
+    let file_linkers = ["index.html", "uni.html" ,"discovery_log.html", "literature_review.html"];
+    let file_linker_headings = ["Home", "Uni" ,"Discovery Log", "Literature Review"];
 
     function createLiA() {
         let nav_li = document.createElement("li");
