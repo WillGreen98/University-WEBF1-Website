@@ -25,10 +25,8 @@ if(DEBUG) {
         let nav_ul = document.createElement("ul");
         nav_ul.classList.add("nav_ul");
 
-        for(let i=0; i < file_linkers.length; i++) {
-            nav_liA = createLiA();
-            nav_ul.appendChild(nav_liA);
-        }
+        nav_liA = createLiA();
+        nav_ul.appendChild(nav_liA);
 
         navigation.appendChild(nav_ul);
 
