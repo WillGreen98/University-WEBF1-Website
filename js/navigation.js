@@ -1,4 +1,4 @@
-DEBUG = true;
+DEBUG = false;
 
 if(DEBUG) {
     let file_linkers = ["index.html", "discovery_log.html", "literature_review.html"];
