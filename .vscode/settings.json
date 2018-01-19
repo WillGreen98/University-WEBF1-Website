@@ -26,5 +26,10 @@
         "plaintext",
         "html",
         "css"
+    ],
+    "cSpell.words": [
+        "io",
+        "portsoc",
+        "vm"
     ]
 }
