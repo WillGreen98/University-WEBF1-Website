@@ -1,4 +1,4 @@
-var DEBUG = false;
+const DEBUG = false;
 
 if(DEBUG) {
 	let file_linkers = ["index.html", "uni.html" ,"discovery_log.html", "literature_review.html"];
@@ -37,8 +37,8 @@ if(DEBUG) {
 	document.body.onload = loadNavigation;
 } else {
 	function loadNavigation() {
-		let nav = document.getElementById('navigation');
-		nav.insertAdjacentHTML('afterbegin',`
+		let nav = document.getElementById("navigation");
+		nav.insertAdjacentHTML("afterbegin",`
 		<nav class="navigation">
 			<ul class="nav_ul">
 				<li class="nav_li"><a href="index.html" class="nav_a">Home</a></li>
