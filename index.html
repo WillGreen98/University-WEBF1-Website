@@ -42,6 +42,18 @@
             <img src="./images/helloworld.png" alt="Hello World!" id="picture_img">
         </picture>
 
+        <!-- HTML ARIA tags for transcript -->
+        <video id="index_video_container" controls autoplay>
+            <source src="" type="video/mp4">
+            <a rel="transcript" for="theVideo" title="English transcript" href="#theText">Transcript below</a>
+            <track kind="transcript" title="English transcript" href="#theText">
+            Your browser does not support the video tag.
+        </video>
+
+        <transcript id="English-transcript">
+            This is the english language transcript...
+        </transcript>
+
         <div id="purpose_container">
         
         </div>
