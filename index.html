@@ -12,18 +12,25 @@
     <title>WEBF1 CW | Home</title>
 </head>
     <body>
-        <!--[if IE]>
+        [if IE]>
             <script type="text/javascript">    
                 alert("Error 404 - Intelligence Not Found ;)");   
                 window.location.href = "./error-pages/ie-404-troll.html";
                 //local storage
             </script>
-        <![endif]-->
+        <![endif]>
 
-        <h1>Welcome!</h1>
-
+        <header class="page_heading">
+            <h1 class="header_heading">This page is dedicated towards What I have been up to during University</h1>
+        
+            <picture class="header_picture">
+                <source media="(min-width: 100%)" srcset="../images/uop.png">
+                <img src="../images/uop.png" alt="UoP Logo">
+            </picture>
+        </header>
+        
         <nav id="navigation"></nav>
-        <script type="text/javascript" src="./js/navigation.js"></script>
+        <script type="text/javascript" src="./scripts/navigation.js"></script>
 
         <nav class="navigation">
             <ul class="nav_ul">
@@ -49,9 +56,9 @@
             <track kind="transcript" title="English transcript" href="#theText">
             Your browser does not support the video tag.
         </video>
-
-        <transcript id="English-transcript">
-            This is the english language transcript...
+        
+        <transcript id="English_transcript">
+            <p id="transcript_p"></p>
         </transcript>
 
         <div id="purpose_container">
