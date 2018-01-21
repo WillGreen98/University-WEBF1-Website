@@ -8,84 +8,84 @@
     <link rel="stylesheet" href="../styling/master.css">
     <title>WEBF1 CW | Uni</title>
 </head>
-<body>
-    <header class="page_heading">
-        <h1 class="header_heading">This page is dedicated towards What I have been up to during University</h1>
+    <body>
+        <header class="page_heading">
+            <h1 class="header_heading">This page is dedicated towards What I have been up to during University</h1>
 
-        <picture class="header_picture">
-            <source media="(min-width: 100%)" srcset="../images/uop.png">
-            <img src="../images/uop.png" alt="UoP Logo">
-        </picture>
-    </header>
+            <picture class="header_picture">
+                <source media="(min-width: 100%)" srcset="../images/uop.png">
+                <img src="../images/uop.png" alt="UoP Logo">
+            </picture>
+        </header>
 
-    <nav id="navigation"></nav>
-    <script type="text/javascript" src="./scripts/navigation.js"></script>
+        <nav id="navigation"></nav>
+        <script type="text/javascript" src="./scripts/navigation.js"></script>
 
-    <div id="map"></div>
-    <script>
-        let map;
-        mappings = {
-            "Kingston" : {"lat" : 51.412330, "long" : -0.300689},
-            "Catherine_House" : {"lat" : 50.7991879, "long" : -1.0924685},
+        <div id="map"></div>
+        <script>
+            let map;
+            mappings = {
+                "Kingston" : {"lat" : 51.412330, "long" : -0.300689},
+                "Catherine_House" : {"lat" : 50.7991879, "long" : -1.0924685},
 
-            "Portsmouth_Uni" : {"lat" : 50.7944606, "long" : -1.0976492},
-            // Needs changing -> Find Coords
-            "Building-Richmond" : {"lat" : 50.7944606, "long" : -1.0976492},
-            "Building-Lion-Gate" : {"lat" : 50.7944606, "long" : -1.0976492},
-            "Building-Buckingham" : {"lat" : 50.7944606, "long" : -1.0976492},
-            "Building-Portland" : {"lat" : 50.7944606, "long" : -1.0976492},
-            "Building-St-Andrews-Court" : {"lat" : 50.7944606, "long" : -1.0976492},
-            "Building-Park" : {"lat" : 50.7944606, "long" : -1.0976492},
-            "Building-St-Burnaby" : {"lat" : 50.7944606, "long" : -1.0976492},
-        };
+                "Portsmouth_Uni" : {"lat" : 50.7944606, "long" : -1.0976492},
+                // Needs changing -> Find Coords
+                "Building-Richmond" : {"lat" : 50.7944606, "long" : -1.0976492},
+                "Building-Lion-Gate" : {"lat" : 50.7944606, "long" : -1.0976492},
+                "Building-Buckingham" : {"lat" : 50.7944606, "long" : -1.0976492},
+                "Building-Portland" : {"lat" : 50.7944606, "long" : -1.0976492},
+                "Building-St-Andrews-Court" : {"lat" : 50.7944606, "long" : -1.0976492},
+                "Building-Park" : {"lat" : 50.7944606, "long" : -1.0976492},
+                "Building-St-Burnaby" : {"lat" : 50.7944606, "long" : -1.0976492},
+            };
 
-        function initMap() {
-            let loading_Point = mappings.Portsmouth_Uni;
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: loading_Point,
-                mapTypeId: "roadmap",
-                zoom: 8
-            });
-        }
+            function initMap() {
+                let loading_Point = mappings.Portsmouth_Uni;
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: loading_Point,
+                    mapTypeId: "roadmap",
+                    zoom: 8
+                });
+            }
 
-        for(var pins in mappings) {
-            let lat = mappings.lat;
-            let long = mappings.long;
+            for(var pins in mappings) {
+                let lat = mappings.lat;
+                let long = mappings.long;
 
-            longLat = {"lat" : lat, "long" : long},
-            pins = new google.maps.Marker({
-                position: longLat,
-                map: map,
-            });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEO1yLxyuebVby4EU5IPtGaBPcY5_0h0Y&callback=initMap" async defer></script>
+                longLat = {"lat" : lat, "long" : long},
+                pins = new google.maps.Marker({
+                    position: longLat,
+                    map: map,
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEO1yLxyuebVby4EU5IPtGaBPcY5_0h0Y&callback=initMap" async defer></script>
 
-    <div id="desc">
-        <p id="description">As you may have seen and will most likely know, I am a student at the University of Portsmouth. This website is 
-        apart of a module project to account for a certain percentage of my grade, I would like to think my website's features are up to a decent 
-        standard when concerning "web dev". Constructing a website is not new to me as I have had previous experience both formal and informal 
-        education.
-        </p>
+        <div id="desc">
+            <p id="description">As you may have seen and will most likely know, I am a student at the University of Portsmouth. This website is 
+            apart of a module project to account for a certain percentage of my grade, I would like to think my website's features are up to a decent 
+            standard when concerning "web dev". Constructing a website is not new to me as I have had previous experience both formal and informal 
+            education.
+            </p>
 
-        <p id="description_uni">So far at uni, I have been introduced to five topics, my favorites are CAR and INTPROG as I prefer programming 
-        and or designing hardware to graphical interfaces, I like INTPROG because it is my programming unit. Below, I have listed all current
-        modules being taught, also, links to a dedicated page for each module is provided.</p>
-    </div>
+            <p id="description_uni">So far at uni, I have been introduced to five topics, my favorites are CAR and INTPROG as I prefer programming 
+            and or designing hardware to graphical interfaces, I like INTPROG because it is my programming unit. Below, I have listed all current
+            modules being taught, also, links to a dedicated page for each module is provided.</p>
+        </div>
 
-    <section id="modules_container">
-        <ul id="modules_ul">
-            <li class="modules_li">Computer Architecture</li>
-            <li class="modules_li">Computer Tutorial</li>
-            <li class="modules_li">Database Design</li>
-            <li class="modules_li">Network Fundamentals</li>
+        <section id="modules_container">
+            <ul id="modules_ul">
+                <li class="modules_li">Computer Architecture</li>
+                <li class="modules_li">Computer Tutorial</li>
+                <li class="modules_li">Database Design</li>
+                <li class="modules_li">Network Fundamentals</li>
 
-            <li class="modules_li">Programming</li>
-                <ul id="modules_programming_ul">
-                    <li class="modules_programming_li">Maths</li>
-                    <li class="modules_programming_ul">Programming Practical</li>
-                </ul>
-        </ul>
-    </section>
-</body>
+                <li class="modules_li">Programming</li>
+                    <ul id="modules_programming_ul">
+                        <li class="modules_programming_li">Maths</li>
+                        <li class="modules_programming_ul">Programming Practical</li>
+                    </ul>
+            </ul>
+        </section>
+    </body>
 </html>
