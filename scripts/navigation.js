@@ -34,7 +34,7 @@ if(DEBUG) {
 		document.body.insertBefore(navigation, currentNav);
 	}
 
-	document.body.onload = loadNavigation;
+	document.body.onload = loadNavigation();
 } else {
 	function loadNavigation() {
 		let nav = document.getElementById("navigation");
@@ -50,5 +50,5 @@ if(DEBUG) {
 	  );
 	}
 
-	loadNavigation();
+	document.body.onload = loadNavigation();
 }
