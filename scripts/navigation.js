@@ -78,9 +78,6 @@ function loadNavigation_DOM() {
 if(PRODUCTION == true) {
 	loadNavigation_Index();
 	loadNavigation();
-
-	document.body.onload = loadNavigation();
 } else {
-	createLiA();
 	loadNavigation_DOM();
 }
