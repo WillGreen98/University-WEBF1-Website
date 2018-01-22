@@ -1,4 +1,4 @@
-const PRODUCTION = false;
+const PRODUCTION = true;
 
 function loadNavigation_Index() {
 	let nav = document.getElementById("navigation");
