@@ -1,6 +1,11 @@
 body {
 
 }
+
+.page_header {}
+
+.header_picture {} 
+
 /* CSS for navigation properties */
 .nav_ul {
     list-style-type: none;
@@ -34,8 +39,15 @@ body {
 .active {
     background-color: #4CAF50;
 }
+/* CSS for navigation properties */
 
 /* CSS for uni.html map */
 #map {
     height: 35%;
-  }
+}
+/* CSS for uni.html map */
+
+/* CSS  for module header */
+.module_picture {}
+
+/* CSS  for module header */
