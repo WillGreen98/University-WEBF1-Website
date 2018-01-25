@@ -34,19 +34,21 @@
         <nav id="navigation"></nav>
         <script src="./scripts/navigation.js"></script>
 
-        <nav class="navigation">
-            <ul class="nav_ul">
+        <nav id="navigation">
+            <ul id="nav_ul">
                 <li class="nav_li"><a href="index.html" class="nav_a">Home</a></li>
                 <li class="nav_li"><a href="./views/literature_review.html" class="nav_a">Literature Review</a></li>
                 <li class="nav_li"><a href="./views/discovery_log.html" class="nav_a">Discovery Log</a></li>
-                <li class="nav_li"><a href="./views/uni.html" class="nav_a">Uni</a></li>
+                <li class="nav_li"><a href="./views/uni.html" class="nav_a">Uni ></a></li>
+                    <ul id="navigation_modules">
+                        <li class="nav_li"><a href="./views/Modules/CAR.html" class="nav_a">CAR</a></li>
+                        <li class="nav_li"><a href="./views/Modules/COMP-TUT.html" class="nav_a"></a></li>
+                        <li class="nav_li"><a href="./views/Modules/INDADD.html" class="nav_a"></a></li>
+                        <li class="nav_li"><a href="./views/Modules/INTPROG.html" class="nav_a">INTPROG</a></li>
+                        <li class="nav_li"><a href="./views/Modules/NETFUN.html" class="nav_a">NETFUN</a></li>
+                        <li class="nav_li"><a href="./views/Modules/WEBF1.html" class="nav_a">WEBF1</a></li>
+                    </ul>
                 <li class="nav_li"><a href="./views/web-dev-standards.html" class="nav_a">Web Standards</a></li>
-                <li class="nav_li"><a href="./views/Modules/CAR.html" class="nav_a">CAR</a></li>
-                <li class="nav_li"><a href="./views/Modules/COMP-TUT.html" class="nav_a"></a></li>
-                <li class="nav_li"><a href="./views/Modules/INDADD.html" class="nav_a"></a></li>
-                <li class="nav_li"><a href="./views/Modules/INTPROG.html" class="nav_a">INTPROG</a></li>
-                <li class="nav_li"><a href="./views/Modules/NETFUN.html" class="nav_a">NETFUN</a></li>
-                <li class="nav_li"><a href="./views/Modules/WEBF1.html" class="nav_a">WEBF1</a></li>
             </ul>
         </nav>
 
@@ -76,31 +78,47 @@
         
         </div>
 
-        <div class="sitemap_container">
-            <ul class="sitemap_ul">
-
-            </ul>
-        </div>
-
-        <footer class="footer_container">
-            <header class="footer_header">
+        <footer id="footer_container">
+            <header id="footer_header">
                 <h3 id="footer_h">Site Footer</h3>
             </header>
-            
-            <div class="github_container">
-                <div class="footer_github">
-                    <picture class="github_picture">
-                        <img src="./images/GitHub-Octocat.png" alt="OCTOCAT" class="github_img">
-                    </picture>
 
-                    <a href="https://github.com/Portsmouth-Computing"></a>
+            <section id="sitemap_container">
+                <ul id="sitemap_links">
+                    <li class="sitemap_link"><a href="index.html" class="nav_a">Home</a></li>
+                    <li class="sitemap_link"><a href="./views/literature_review.html" class="nav_a">Literature Review</a></li>
+                    <li class="sitemap_link"><a href="./views/discovery_log.html" class="nav_a">Discovery Log</a></li>
+                    <li class="sitemap_link"><a href="./views/uni.html" class="nav_a">Uni</a></li>
+                    <li class="sitemap_link"><a href="./views/web-dev-standards.html" class="nav_a">Web Standards</a></li>
+                    <li class="sitemap_link"><a href="./views/Modules/CAR.html" class="nav_a">CAR</a></li>
+                    <li class="sitemap_link"><a href="./views/Modules/COMP-TUT.html" class="nav_a"></a></li>
+                    <li class="sitemap_link"><a href="./views/Modules/INDADD.html" class="nav_a"></a></li>
+                    <li class="sitemap_link"><a href="./views/Modules/INTPROG.html" class="nav_a">INTPROG</a></li>
+                    <li class="sitemap_link"><a href="./views/Modules/NETFUN.html" class="nav_a">NETFUN</a></li>
+                    <li class="sitemap_link"><a href="./views/Modules/WEBF1.html" class="nav_a">WEBF1</a></li>
+                </ul>
+            </section>
+            
+            <div id="Linker_container">
+                <div id="footer_googledrive">
+                    <picture id="google_drive_icon">
+                        <img src="./images/Google-Drive-icon.png" alt="">
+                    </picture>
                 </div>
 
-                <div>
-                    <picture class="github_picture">
+                <div id="footer_github_link">
+                    <picture id="github_link_icon">
                         <img src="./images/Web-Link.png" alt="Link to Github.io site" class="github_img">
                     </picture>
     
+                    <a href="https://github.com/Portsmouth-Computing"></a>
+                </div>
+
+                <div id="footer_github">
+                    <picture id="github_icon">
+                        <img src="./images/GitHub-Octocat.png" alt="OCTOCAT" class="github_img">
+                    </picture>
+
                     <a href="https://github.com/Portsmouth-Computing"></a>
                 </div>
             </div>
