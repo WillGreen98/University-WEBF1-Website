@@ -75,9 +75,13 @@ function loadNavigation_DOM() {
 	document.body.insertBefore(navigation, currentNav);
 }
 
-if(PRODUCTION == true) {
-	loadNavigation_Index();
-	loadNavigation();
+let index_page_path = "../index.html";
+if(PRODUCTION) {
+	if(window.location.pathname == index_page_path) {
+		loadNavigation_Index();
+	} else {
+		loadNavigation();
+	}
 } else {
 	loadNavigation_DOM();
 }
