@@ -1,5 +1,8 @@
+html {
+    height: 100%; 
+}
 body {
-
+    min-height: 100%;
 }
 
 .page_header {}
@@ -7,38 +10,9 @@ body {
 .header_picture {} 
 
 /* CSS for navigation properties */
-.nav_ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
 
-.nav_li {
-    display: inline;
-    color: #FFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-right: 1px solid #bbb;
-}
 
-.newNav_a {
-    display: inline;
-    color: #FFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
-.newNav_a:hover {
-    background-color: #4CAF50;
-}
-
-.newNav_a:active {
-    background-color: #4CAF50;
-}
 /* CSS for navigation properties */
 
 /* CSS for uni.html map */
