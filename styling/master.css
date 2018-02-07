@@ -10,21 +10,121 @@ body {
 .header_picture {} 
 
 /* CSS for navigation properties */
-
-
-
-/* CSS for navigation properties */
-
-/* CSS for uni.html map */
-#map {
-    height: 35%;
+.nav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
 }
-/* CSS for uni.html map */
+
+.nav_li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+.nav_li:last-child {
+    border-right: none;
+}
+
+.nav_a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_a:hover .dropdown:hover .dropdown_activator {
+    background-color: blue;
+}
+
+.dropdown_activator {
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content .nav_a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav_a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown_activator .dropdown_content {
+    display: block;
+}
+
+.nav_a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+@media screen and (max-width: 900px) {
+    nav_ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    nav_ul.sidenav nav_li nav_a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+/* CSS for navigation properties */
 
 /* CSS  for module header */
 .module_picture {
     height: 30%;
     widows: 100%
 }
-
 /* CSS  for module header */
+
+/* CSS for footer */
+#footer_container {
+    background-color: gray;
+}
+
+#footer_h {
+    text-align: center
+}
+
+#footer_h:after {
+    content: "";
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin-left: 35%;
+    border-bottom: 1px solid;
+}
+
+#sitemap_container {
+    float: right;
+}
+
+#linker_container {}
+/* CSS for footer */
