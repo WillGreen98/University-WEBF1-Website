@@ -1,5 +1,17 @@
 const PRODUCTION = true;
 
+function page_Active() {
+	let link_list = [URL];
+	let link_Active = document.getElementById("navigation").getElementsByTagName("a");
+	link_list.appendChild(link_Active);
+
+	for(i=0; i<link_list.length; i++) { 
+		if(document.location.href.indexOf(link_Active[i].href)>=0) {
+			link_Active[i].className="active";
+	  	}
+	}
+}
+
 function loadNavigation_Index() {
 	let nav = document.getElementById("navigation");
 	nav.insertAdjacentHTML("afterbegin",`
@@ -76,12 +88,14 @@ function loadNavigation_DOM() {
 }
 
 let index_page_path = "../index.html";
-if(PRODUCTION) {
+if(PRODUCTION == true) {
 	if(window.location.pathname == index_page_path) {
+		window.onload = page_Active();
 		loadNavigation_Index();
 	} else {
 		loadNavigation();
 	}
 } else {
+	window.onload = page_Active();
 	loadNavigation_DOM();
 }
