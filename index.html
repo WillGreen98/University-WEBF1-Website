@@ -16,36 +16,41 @@
     <body>
         <!-- <![if IE]>
             <script>    
-                alert("Error 404 - Intelligence Not Found ;)");   
+                alert("Error 404 - Intelligence Not Found wink wink nudge nudge");   
                 window.location.href = "/error-pages/ie-404-troll.html";
-                //local storage
+                
+                var ls_visited = localStorage.getItem('namespace.visited');
+                if(ls_visited != null) {
+                    window.location.href = "./index.html";
+                    localStorage.setItem('namespace.visited', 1)
+                }
             </script>
         <![endif]> -->
 
         <header class="page_heading">
             <h1 class="header_heading">This page is dedicated towards What I have been up to during University</h1>
-        
+            
             <picture class="header_picture">
                 <source media="(min-width: 100%)" srcset="./images/uop.png">
                 <img src="./images/uop.png" alt="UoP Logo">
             </picture>
         </header>
         
-        <nav id="navigation"></nav>
-        <script src="./scripts/navigation.js "></script>
+        <!-- <nav id="navigation"></nav>
+        <script src="./scripts/navigation.js "></script> -->
 
-        <nav id="navigation">
+        <nav class="navigation">
             <ul class="nav_ul">
                 <li class="nav_li"><a href="index.html" class="nav_a">Home</a></li>
                 <li class="nav_li"><a href="./views/literature_review.html" class="nav_a">Literature Review</a></li>
                 <li class="nav_li"><a href="./views/discovery_log.html" class="nav_a">Discovery Log</a></li>
-                <li class="nav_li"><a href="./views/uni.html" class="nav_a">Uni></a></li>
+                <li class="nav_li"><a href="./views/uni.html" class="nav_a">Uni></a><a href="javascript:void(0)" class="dropdown_Activator">Hi</a></li>
                     <div class="dropdown_content">
                         <ul class="navigation_modules">
                             <li class="nav_li"><a href="./views/Modules/CAR.html" class="nav_a"><abbr title="Computer Architecture">CAR</abbr></a></li>
                             <li class="nav_li"><a href="./views/Modules/COMP-TUT.html" class="nav_a"><abbr title="Computer Tutorial">COMP TUT</abbr></a></li>
                             <li class="nav_li"><a href="./views/Modules/INDADD.html" class="nav_a"><abbr title="Introduction To Databases and Design">INDADD</abbr></a></li>
-                            <li class="nav_li"><a href="./views/Modules/INTPROG.html" class="nav_a">INTPROG</a></li>
+                            <li class="nav_li"><a href="./views/Modules/INTPROG.html" class="nav_a"><abbr title="Introduction To Programmin">INTPROG</abbr></a></li>
                             <li class="nav_li"><a href="./views/Modules/NETFUN.html" class="nav_a">NETFUN</a></li>
                             <li class="nav_li"><a href="./views/Modules/WEBF1.html" class="nav_a">WEBF1</a></li>
                         </ul>
@@ -101,27 +106,29 @@
                 </ul>
             </section>
             
-            <div id="Linker_container">
+            <div id="linker_container">
                 <div id="footer_googledrive">
+                    <a href="https://drive.google.com/drive/u/1/folders/0AP_JQaLbJlnLUk9PVA" target="_blank">Computer Science Main Drive</a>
+
                     <picture id="google_drive_icon">
-                        <img src="./images/Google-Drive-icon.png" alt="">
+                            <img src="./images/Google-Drive-icon.png" alt="G-Drive Icon">
                     </picture>
                 </div>
 
                 <div id="footer_github_link">
+                    <a href="https://portsmouth-computing.github.io/" target="_blank">github.com/Portsmouth-Computing</a>
+
                     <picture id="github_link_icon">
-                        <img src="./images/Web-Link.png" alt="Link to Github.io site" class="github_img">
+                            <img src="./images/Web-Link.png" alt="Link to Github.io site" class="github_img">
                     </picture>
-    
-                    <a href="https://github.com/Portsmouth-Computing"></a>
                 </div>
 
                 <div id="footer_github">
-                    <picture id="github_icon">
-                        <img src="./images/GitHub-Octocat.png" alt="OCTOCAT" class="github_img">
-                    </picture>
+                    <a href="https://github.com/Portsmouth-Computing" target="_blank">github.com/Portsmouth-Computing</a>
 
-                    <a href="https://github.com/Portsmouth-Computing"></a>
+                    <picture id="github_icon">
+                            <img src="./images/GitHub-Octocat.png" alt="OCTOCAT" class="github_img">
+                    </picture>
                 </div>
             </div>
         </footer>
