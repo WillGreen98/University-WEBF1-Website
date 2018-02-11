@@ -122,6 +122,11 @@ body {
     border-bottom: 1px solid;
 }
 
+#google_drive_icon, #github_link_icon, #github_icon {
+    height: 10%;
+    width: auto;
+}
+
 #sitemap_container {
     float: right;
 }

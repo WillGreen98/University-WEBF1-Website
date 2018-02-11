@@ -79,11 +79,12 @@ function loadNavigation_Modules() {
 	);
 }
 
-let url = window.location.pathname;
-let directory = url.substring(0, url.lastIndexOf("/"));
-let file = url.substring(url.lastIndexOf("/")+1);
+let pathname = window.location.pathname;
+let directory = pathname.substring(0, pathname.lastIndexOf("/"));
+let file = pathname.substring(pathname.lastIndexOf("/")+1);
 
 if(PRODUCTION == true) {
+    page_Active();
 	switch(file) {
 	case "index.html": 
 		loadNavigation_Index();
@@ -105,6 +106,7 @@ if(PRODUCTION == true) {
 	}
 }
 
+// attempt at a router
 // if(PRODUCTION == true) {
 // 	page_Active();
 // 	switch(directory) {
