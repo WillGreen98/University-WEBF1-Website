@@ -9,8 +9,6 @@
 
     <link rel="stylesheet" href="./styling/master.css">
     <link rel="stylesheet" href="./styling/index.css">
-
-    <script src="./scripts/navigation"></script>
     <title>WEBF1 CW | Home</title>
 </head>
     <body>
@@ -24,6 +22,8 @@
                     window.location.href = "./index.html";
                     localStorage.setItem('namespace.visited', 1)
                 }
+
+                window.location.path
             </script>
         <![endif]> -->
 
@@ -36,9 +36,9 @@
             </picture>
         </header>
         
+        <script src="./scripts/navigation.js"></script>
         <nav role="navigation" id="navigation"></nav>
-        <script src="./scripts/navigation"></script>
-
+        
         <!-- Test Pic for header -->
         <picture id="header_picture">
             <source media="(min-width: 10%)" srcset="./images/helloworld.png">
@@ -91,7 +91,7 @@
                     <a href="https://drive.google.com/drive/u/1/folders/0AP_JQaLbJlnLUk9PVA" target="_blank">Computer Science Main Drive</a>
 
                     <picture id="google_drive_icon">
-                            <img src="./images/Google-Drive-icon.png" alt="G-Drive Icon">
+                            <img src="./images/Google-Drive-icon.png" alt="G-Drive Icon" id="gd_img">
                     </picture>
                 </div>
 
@@ -99,7 +99,7 @@
                     <a href="https://portsmouth-computing.github.io/" target="_blank">github.com/Portsmouth-Computing</a>
 
                     <picture id="github_link_icon">
-                            <img src="./images/Web-Link.png" alt="Link to Github.io site" class="github_img">
+                            <img src="./images/Web-Link.png" alt="Link to Github.io site">
                     </picture>
                 </div>
 
@@ -109,6 +109,12 @@
                     <picture id="github_icon">
                             <img src="./images/GitHub-Octocat.png" alt="OCTOCAT" class="github_img">
                     </picture>
+                </div>
+
+                <div id="page_validator">
+                    <a href="https://goo.gl/v4Wr81">
+                        <img id=w3c src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                    </a>
                 </div>
             </div>
         </footer>

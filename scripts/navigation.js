@@ -84,16 +84,16 @@ let directory = pathname.substring(0, pathname.lastIndexOf("/"));
 let file = pathname.substring(pathname.lastIndexOf("/")+1);
 
 if(PRODUCTION == true) {
-    page_Active();
+	window.onload= page_Active();
 	switch(file) {
 	case "index.html": 
-		loadNavigation_Index();
+		window.onload = loadNavigation_Index();
 		break;
 	case "discovery.html":
 	case "literature_review.html":
 	case "uni.html":
 	case "web-dev-standards.html":
-		loadNavigation_Views();
+		window.onload = loadNavigation_Views();
 		break;
 	case "CAR.html":
 	case "COMP-TUT.html":
@@ -101,7 +101,7 @@ if(PRODUCTION == true) {
 	case "INTPROG.html":
 	case "NETFUN.html":
 	case "WEBF1.html":
-		loadNavigation_Modules();
+		window.onload = loadNavigation_Modules();
 		break;
 	}
 }

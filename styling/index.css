@@ -2,12 +2,30 @@ body {
 
 }
 
-#header_picture, #picture_img {
-    float: left: 0;
+@media (max-width: 640px) {
+    li {
+        font-size: small;
+    }
+
+    #menu_container {
+        padding-bottom: 35px;
+    }
 }
 
-#picture_img {
-    width: 40%;
+@media (max-width: 1100px) and (min-width: 781px) {
+    li {
+        font-size: large;
+    }
+}
+
+#index_video_container {
+    max-width: 100%;
+    height: auto;
+}
+
+#gd_img, #footer_github_link, .github_icon {
+    width: auto;
+    height: 20%;
 }
 
 #map_div {
