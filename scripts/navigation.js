@@ -86,7 +86,7 @@ let file = pathname.substring(pathname.lastIndexOf("/")+1);
 if(PRODUCTION == true) {
 	window.onload= page_Active();
 	switch(file) {
-	case "index.html": 
+	case "index.html":
 		window.onload = loadNavigation_Index();
 		break;
 	case "discovery.html":
