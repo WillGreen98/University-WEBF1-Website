@@ -5,7 +5,7 @@ function page_Active() {
 	let link_Active = document.getElementById("navigation").getElementsByTagName("a");
 	link_list.appendChild(link_Active);
 
-	for(let i=0; i<link_list.length; i++) { 
+	for(let i=0; i<link_list.length; i++) {
 		if(document.location.href.indexOf(link_Active[i].href)>=0) {
 			link_Active[i].className="active";
 		}
@@ -42,7 +42,7 @@ function loadNavigation_Views() {
 	nav.insertAdjacentHTML("afterbegin",`
 	<nav class="navigation">
             <ul class="nav_ul">
-                <li class="nav_li"><a href="../index.html" class="nav_a">Home</a></li>  
+                <li class="nav_li"><a href="../index.html" class="nav_a">Home</a></li>
                 <li class="nav_li"><a href="literature_review.html" class="nav_a">Literature Review</a></li>
                 <li class="nav_li"><a href="discovery_log.html" class="nav_a">Discovery Log</a></li>
                 <li class="nav_li"><a href="uni.html" class="nav_a">Uni</a></li>
