@@ -22,45 +22,84 @@
         <nav id="navigation"></nav>
         <script src="../scripts/navigation.js"></script>
 
+        <nav id="navigation">
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="./index.html" class="nav_a">Home</a></li>
+                <li class="nav_li"><a href="literature_review.html" class="nav_a">Literature Review</a></li>
+                <li class="nav_li"><a href="discovery_log.html" class="nav_a">Discovery Log</a></li>
+                <li class="nav_li"><a href="uni.html" class="nav_a">Uni></a></li>
+                    <div class="dropdown_content">
+                        <ul class="navigation_modules">
+                            <li class="nav_li"><a href="/Modules/CAR.html" class="nav_a"><abbr title="Computer Architecture">CAR</abbr></a></li>
+                            <li class="nav_li"><a href="/Modules/COMP-TUT.html" class="nav_a"><abbr title="Computer Tutorial">COMP TUT</abbr></a></li>
+                            <li class="nav_li"><a href="/Modules/INDADD.html" class="nav_a"><abbr title="Introduction To Databases and Design">INDADD</abbr></a></li>
+                            <li class="nav_li"><a href="/Modules/INTPROG.html" class="nav_a">INTPROG</a></li>
+                            <li class="nav_li"><a href="/Modules/NETFUN.html" class="nav_a">NETFUN</a></li>
+                            <li class="nav_li"><a href="/Modules/WEBF1.html" class="nav_a">WEBF1</a></li>
+                        </ul>
+                    </div>
+                <li class="nav_li"><a href="web-dev-standards.html" class="nav_a">Web Standards</a></li>
+            </ul>
+        </nav>
+
+        <!-- <div id="map">
+            <script>
+                let map;
+                mappings = {
+                    "Kingston" : {"lat" : 51.412330, "long" : -0.300689},
+                    "Catherine_House" : {"lat" : 50.7991879, "long" : -1.0924685},
+
+                    "Portsmouth_Uni" : {"lat" : 50.7944606, "long" : -1.0976492},
+                    // Needs changing -> Find Coords
+                    "Building-Richmond" : {"lat" : 50.7944606, "long" : -1.0976492},
+                    "Building-Lion-Gate" : {"lat" : 50.7944606, "long" : -1.0976492},
+                    "Building-Buckingham" : {"lat" : 50.7944606, "long" : -1.0976492},
+                    "Building-Portland" : {"lat" : 50.7944606, "long" : -1.0976492},
+                    "Building-St-Andrews-Court" : {"lat" : 50.7944606, "long" : -1.0976492},
+                    "Building-Park" : {"lat" : 50.7944606, "long" : -1.0976492},
+                    "Building-St-Burnaby" : {"lat" : 50.7944606, "long" : -1.0976492},
+                };
+
+                function initMap() {
+                    let loading_Point = mappings.Portsmouth_Uni;
+                    let map = new google.maps.Map(document.getElementById('map'), {
+                        center: loading_Point,
+                        mapTypeId: "roadmap",
+                        zoom: 8
+                    });
+                }
+
+                for(var pins in mappings) {
+                    let lat = mappings.lat;
+                    let long = mappings.long;
+
+                    longLat = {"lat": lat, "long": long},
+                    pins = new google.maps.Marker({
+                        position: longLat,
+                        map: map,
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEO1yLxyuebVby4EU5IPtGaBPcY5_0h0Y&callback=initMap" async defer></script>
+        </div> -->
+
         <div id="map"></div>
-        <script>
-            let map;
-            mappings = {
-                "Kingston" : {"lat" : 51.412330, "long" : -0.300689},
-                "Catherine_House" : {"lat" : 50.7991879, "long" : -1.0924685},
-
-                "Portsmouth_Uni" : {"lat" : 50.7944606, "long" : -1.0976492},
-                // Needs changing -> Find Coords
-                "Building-Richmond" : {"lat" : 50.7944606, "long" : -1.0976492},
-                "Building-Lion-Gate" : {"lat" : 50.7944606, "long" : -1.0976492},
-                "Building-Buckingham" : {"lat" : 50.7944606, "long" : -1.0976492},
-                "Building-Portland" : {"lat" : 50.7944606, "long" : -1.0976492},
-                "Building-St-Andrews-Court" : {"lat" : 50.7944606, "long" : -1.0976492},
-                "Building-Park" : {"lat" : 50.7944606, "long" : -1.0976492},
-                "Building-St-Burnaby" : {"lat" : 50.7944606, "long" : -1.0976492},
-            };
-
-            function initMap() {
-                let loading_Point = mappings.Portsmouth_Uni;
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: loading_Point,
-                    mapTypeId: "roadmap",
-                    zoom: 8
-                });
-            }
-
-            for(var pins in mappings) {
-                let lat = mappings.lat;
-                let long = mappings.long;
-
-                longLat = {"lat" : lat, "long" : long},
-                pins = new google.maps.Marker({
-                    position: longLat,
-                    map: map,
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEO1yLxyuebVby4EU5IPtGaBPcY5_0h0Y&callback=initMap" async defer></script>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEO1yLxyuebVby4EU5IPtGaBPcY5_0h0Y&callback=initMap">
+    </script>
 
         <div id="desc">
             <p id="description">As you may have seen and will most likely know, I am a student at the University of Portsmouth. This website is 

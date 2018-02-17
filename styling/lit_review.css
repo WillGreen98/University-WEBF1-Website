@@ -9,3 +9,16 @@ body {
 .citation::before {
     content: "\2022  " /* Double space needed */
 }
+
+#results_h {
+    text-align: center
+}
+
+#results_h:after {
+    content: "";
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin-left: 35%;
+    border-bottom: 1px solid;
+}

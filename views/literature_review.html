@@ -19,8 +19,28 @@
             </picture>
         </header>
         
-        <nav id="navigation"></nav>
-        <script src="../scripts/navigation.js"></script>
+        <!-- <nav id="navigation"></nav>
+        <script src="../scripts/navigation.js"></script> -->
+
+        <nav id="navigation">
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="./index.html" class="nav_a">Home</a></li>
+                <li class="nav_li"><a href="literature_review.html" class="nav_a">Literature Review</a></li>
+                <li class="nav_li"><a href="discovery_log.html" class="nav_a">Discovery Log</a></li>
+                <li class="nav_li"><a href="uni.html" class="nav_a">Uni></a></li>
+                    <div class="dropdown_content">
+                        <ul class="navigation_modules">
+                            <li class="nav_li"><a href="/Modules/CAR.html" class="nav_a"><abbr title="Computer Architecture">CAR</abbr></a></li>
+                            <li class="nav_li"><a href="/Modules/COMP-TUT.html" class="nav_a"><abbr title="Computer Tutorial">COMP TUT</abbr></a></li>
+                            <li class="nav_li"><a href="/Modules/INDADD.html" class="nav_a"><abbr title="Introduction To Databases and Design">INDADD</abbr></a></li>
+                            <li class="nav_li"><a href="/Modules/INTPROG.html" class="nav_a">INTPROG</a></li>
+                            <li class="nav_li"><a href="/Modules/NETFUN.html" class="nav_a">NETFUN</a></li>
+                            <li class="nav_li"><a href="/Modules/WEBF1.html" class="nav_a">WEBF1</a></li>
+                        </ul>
+                    </div>
+                <li class="nav_li"><a href="web-dev-standards.html" class="nav_a">Web Standards</a></li>
+            </ul>
+        </nav>
 
         <div id="downloader_container">
             <div id="downloader_div_img">
@@ -144,25 +164,5 @@
                 <cite class="citation">SQL Injection Attacks: Detection in a Web Application Environment, 2016. (2016) (p. 3). Retrieved from <a href="www.dbnetworks.com/pdf/sql-injection-detection-web-environment.pdf" class="cite_ref"></a></cite>
             </section>
         </article>
-
-        <div id="results_container">
-            <iframe id="results_frame" width=100% height="800"></iframe>
-            <script type="text/javascript">
-                var frame_url = 'http://rdfx.org/#';
-                var iframe_id = 'results_frame';
-            
-                function iframe_Load(){
-                    var req = new XMLHttpRequest();
-                    req.open("POST",this.frame_url, false, "up853829@myport.ac.uk", "");
-                    req.send(null);
-
-                    var iFrameWin = document.getElementById(this.iframe_id);
-                    iFrameWin.src = this.frame_url + "?extraParameters=true";
-                    document.getElementById('results_frame').submit();
-                }
-
-                iframe_Load();   
-            </script>
-        </div>
     </body>
 </html>
