@@ -83,41 +83,27 @@ let pathname = window.location.pathname;
 let directory = pathname.substring(0, pathname.lastIndexOf("/"));
 let file = pathname.substring(pathname.lastIndexOf("/")+1);
 
-if(PRODUCTION == true) {
-	window.onload= page_Active();
-	switch(file) {
-	case "index.html":
-		window.onload = loadNavigation_Index();
-		break;
-	case "discovery.html":
-	case "literature_review.html":
-	case "uni.html":
-	case "web-dev-standards.html":
-		window.onload = loadNavigation_Views();
-		break;
-	case "CAR.html":
-	case "COMP-TUT.html":
-	case "INDADD.html":
-	case "INTPROG.html":
-	case "NETFUN.html":
-	case "WEBF1.html":
-		window.onload = loadNavigation_Modules();
-		break;
-	}
-}
-
-// attempt at a router
 // if(PRODUCTION == true) {
-// 	page_Active();
-// 	switch(directory) {
-// 	case "/":
-// 		loadNavigation_Index();
+// 	window.onload= page_Active();
+// 	switch(file) {
+// 	case "index.html":
+// 		window.onload = loadNavigation_Index();
 // 		break;
-// 	case "/views":
-// 		loadNavigation_Views();
+// 	case "discovery.html":
+// 	case "literature_review.html":
+// 	case "uni.html":
+// 	case "web-dev-standards.html":
+// 		window.onload = loadNavigation_Views();
 // 		break;
-// 	case "/views/Modules/":
-// 		loadNavigation_Modules();
+// 	case "CAR.html":
+// 	case "COMP-TUT.html":
+// 	case "INDADD.html":
+// 	case "INTPROG.html":
+// 	case "NETFUN.html":
+// 	case "WEBF1.html":
+// 		window.onload = loadNavigation_Modules();
 // 		break;
 // 	}
 // }
+
+loadNavigation_Index();
