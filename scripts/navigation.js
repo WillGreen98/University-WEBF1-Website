@@ -10,7 +10,6 @@ function loadNavigation_Index() {
                     <div id="dropdown_content">
                         <a href="uni.html" class="nav_a_drop">Uni</a>
                         <a href="video.html" class="nav_a_drop">Video</a>
-                        <a href="web-dev-standards.html" class="nav_a_drop">Web Standards</a>
                         <a href="element.html" class="nav_a_drop">Element View</a>
                     </div>
                 </li>

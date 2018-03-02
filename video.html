@@ -19,14 +19,16 @@
         </section>
 
         <picture class="header_picture">
-            <source media="(min-width: 100%)" srcset="./images/uop.png">
+            <source srcset="./images/uop.png">
             <img src="./images/uop.png" alt="UoP Logo">
         </picture>
     </header>
 
     <div id="video_container">
-        <video id="video_content" controls preload="none" poster="">
+        <video id="video_content" controls preload="none" poster="./images/nine.pmg">
             <source src="./video/Countdown.mp4">
+            <source src="./video/Countdown.ogg">
+            <source src="./video/Countdown.webm">
             <track label = "English" kind="subtitles" srclang="en" src="./video/subs.vtt" default/>
             Your browser does not support the video tag.
         </video>
