@@ -1,0 +1,85 @@
+body {
+
+}
+
+#ds_header, #abstract_heading, #abstract_para, #intro_heading, #intro_para, #logs_heading, #logs_para {
+    text-align: center;
+}
+
+.week_container:after {
+    content: " ";
+    display: block;
+    border-bottom: 5px solid #61185F;
+}
+
+/* A poor attempt to use more psuedo-attributes */
+.week_heading:before {
+    content: "Week "
+}
+
+img {
+    width: 20%;
+    height: auto;
+}
+
+footer img {
+    width: auto;
+}
+
+pre {
+    border-left: 1px solid #000;
+}
+
+.cyan {
+    color: #20C5C6;
+}
+
+.red {
+    color:#C30000;
+}
+
+.green{
+    color: #16C11C;
+}
+
+.black{
+    color: #000000;
+}
+
+#week_1_span {
+    color: red;
+}
+
+.week_2_span {
+    color: blue;
+}
+
+#week_4_span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#week_6_span {
+    font-weight: bold;
+}
+
+.week_10_span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.week_11_span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.week_12_span {
+    color: orangered;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.week_13_span {
+    text-decoration: underline;
+    font-weight: bold;
+}

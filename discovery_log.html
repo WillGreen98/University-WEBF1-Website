@@ -5,39 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="./styling/master.css">
-    <link rel="stylesheet" href="./styling/dicovery_log.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/dicovery_log.css">
     <title>WEF1 CW | Discovery Log</title>
 </head>
-    <body>
-        <header class="page_heading">
-            <h1 class="header_heading">This page is dedicated towards What I have been up to during University</h1>
-    
-            <picture class="header_picture">
-                <source media="(min-width: 100%)" srcset="../images/uop.png">
-                <img src="../images/uop.png" alt="UoP Logo">
-            </picture>
-        </header>
-    
+    <body>    
         <nav id="navigation"></nav>
-        <script src="../scripts/navigation"></script>
+        <script src="./scripts/navigation.js"></script>
 
-        <div id="downloader_container">
-            <div id="downloader_div_img">
-                <picture id="downloader_picture">
-                    <source src="" type="">
-                    <a href="../downloads/Discovery-Log.zip" download target="_Discovery-Log"><img src="../images/Tex-Icon.png" alt="Discovery Log - Tex Download"></a>
-                </picture>
-            </div>
-
-            <div id="downloader_link">
-                <h2 id="downloader_link_h"><a href="../downloads/Discovery-Log.zip" download target="_Discovery Log" id="downloader_link_a">Discover Log - Tex Download</a></h2>
-            </div>
-        </div>
+        <header id="page_heading">
+            <section class="header_id">
+                <h1 id="header_heading">Discovery Log</h1>
+            </section>
+        </header>
 
         <div id="ds_container">
-            <picture class="ds_UoP">
-                <img src="../images/uop.png" alt="uop.png" class="ds_UoP_img">
+            <picture id="ds_UoP">
+                <img src="./images/uop.png" alt="uop.png" class="ds_UoP_img">
             </picture>
 
             <article id="ds_article">
@@ -85,8 +69,8 @@
                             projects we are going to have. Introductory segments were allocated to the overview of the
                             unit, breaking down each module to a few areas:</p>
         
-                            <div class="list_container">
-                                <ul class="ul_container">
+                            <div id="list_container">
+                                <ul id="ul_container">
                                     <li class="ul_li">Performance for each module.</li>
                                     <li class="ul_li">What each module contains.</li>
                                     <li class="ul_li">What is expected of us.</li>
@@ -120,8 +104,8 @@
                         people to complete a Google Doc based on Web Security, we had five sections
                         to input data, mainly opinions, the subject headers were:</p>
     
-                        <div class="list_container">
-                            <ul class="ul_container">
+                        <div id="list_container">
+                            <ul id="ul_container">
                                 <li class="ul_li">Information generated about myself on a daily basis.</li>
                                 <li class="ul_li">How it is captured.</li>
                                 <li class="ul_li">How it is shared.</li>
@@ -143,14 +127,14 @@
                         <h2 class="week_heading">Four: 16th - 22nd Oct</h2>
                         <p id="week_4_p">Today; Friday 20/10/17, the main focus for this week is coursework, this is because
                         our first draft is due on the 3rd... seeing as the date is the 27th, yeah, you get the idea.
-                        We have been given a task sheet to complete labelled <span id="week_4_span">``Better Writing''</span>.</p>
+                        We have been given a task sheet to complete labelled <span id="week_4_span">Better Writing</span>.</p>
                     </section>
                 </div>
 
                 <div class="week_container">
                     <section id="week_5">
                         <h2 class="week_heading">Five: 23rd - 29th Oct</h2>
-                        <p id="week_5_p">Today; Friday 27/11/17, was the first practical session on the infamous language that
+                        <p class="week_5_p">Today; Friday 27/11/17, was the first practical session on the infamous language that
                         is… HTML, as I mentioned in week two, my Uni has given us VM's, today we got to upload a simple HTML
                         document to the server and have our very own webspace. This wasn't anything new for me, so…
                         I messed around trying to open port 21 of the server to allow for FTP uploads. Screw editing
@@ -158,7 +142,7 @@
     
                         <figure class="ds_figure">
                             <picture id="ds_figure-weekFive">
-                                <img src="../images/images-discovery-log/spacemacs.png" alt="spacemacs.png">
+                                <img src="./images/images-discovery-log/spacemacs.png" alt="spacemacs.png">
                             </picture>
     
                             <figcaption class="ds_figure-caption">Spacemacs is a combination of Emacs and Vim.</figcaption>
@@ -169,7 +153,7 @@
     
                         <figure class="ds_figure">
                             <picture>
-                                <img src="../images/images-discovery-log/spacemacs_suc.png" alt="spacemacs_suc.png">
+                                <img src="./images/images-discovery-log/spacemacs_suc.png" alt="spacemacs_suc.png">
                             </picture>
     
                             <figcaption class="ds_figure-caption">Installation of Spacemacs.</figcaption>
@@ -183,42 +167,43 @@
                         <p class="week_6_p">Today; Friday 3/11/17, we focused on creating a simple webpage created with HTML and
                         attempted to upload said page to our Uni VM. The Apache server seems to be
                         installed correctly, I have the appropriate directory for
-                        the server as the index.html is in <span id="week_7_span">/var/www/html</span>:</p>
+                        the server as the index.html is in <span id="week_6_span">/var/www/html</span>:</p>
     
                         <figure class="ds_figure">
                             <picture>
-                                <img src="../images/images-discovery-log/VM-dir.png" alt="vm-dir.png">
+                                <img src="./images/images-discovery-log/VM-dir.png" alt="vm-dir.png">
                             </picture>
     
                             <figcaption class="ds_figure-caption">My VM web directory.</figcaption>
                         </figure>
     
-                        <p class="week_7_p">The simple HTML file that was created and I simply edited a few </tags></p>
+                        <p class="week_6_p">The simple HTML file that was created and I simply edited a few </tags></p>
 
-                        <div id="week_7_code_container">
-                            <pre id="week_7_pre">
-                                <code id="wee_7_code">
-                                    <span class="cyan">&lt;!doctype html&gt;</span>
-                                    <span class="cyan">&lt;html </span><span class="red">lang=</span><span class="green">"en"</span><span class="cyan">&gt;</span>
-                                        <span class="cyan">&lt;head&gt;</span>
-                                            <span class="cyan">&lt;meta&gt;</span><span class="red">charset=</span><span class="green">"utf-8"</span><span class="cyan">&gt;</span>
-                                            <span class="cyan">&lt;title&gt;</span><span class="black">First WebPage for VM</span><span class="cyan">&lt;/title&gt;</span>
-                                        <span class="cyan">&lt;/head&gt;</span>
-                                        <span class="cyan">&lt;body&gt;</span>
-                                            <span class="cyan">&lt;h1&gt;</span><span class="black">Hello there!</span><span class="cyan">&lt;/h1&gt;</span>
-                                            <span class="cyan">&lt;h1&gt;</span><span class="black">I am Dead INSIDE&hellip;</span><span class="cyan">&lt;/h1&gt;</span>
-                                        <span class="cyan">&lt;body&gt;</span>
-                                    <span class="cyan">&lt;html&gt;</span>
+                        <!-- The pre code has to be like that in order to be formatted correctly -->
+                        <div id="week_6_code_container">
+                            <pre id="week_6_pre">
+                                <code id="wee_6_code">
+        <span class="cyan">&lt;!doctype html&gt;</span>
+        <span class="cyan">&lt;html </span><span class="red">lang=</span><span class="green">"en"</span><span class="cyan">&gt;</span>
+            <span class="cyan">&lt;head&gt;</span>
+                <span class="cyan">&lt;meta&gt;</span><span class="red">charset=</span><span class="green">"utf-8"</span><span class="cyan">&gt;</span>
+                <span class="cyan">&lt;title&gt;</span><span class="black">First WebPage for VM</span><span class="cyan">&lt;/title&gt;</span>
+            <span class="cyan">&lt;/head&gt;</span>
+            <span class="cyan">&lt;body&gt;</span>
+                <span class="cyan">&lt;h1&gt;</span><span class="black">Hello there!</span><span class="cyan">&lt;/h1&gt;</span>
+                <span class="cyan">&lt;h1&gt;</span><span class="black">I am Dead INSIDE&hellip;</span><span class="cyan">&lt;/h1&gt;</span>
+            <span class="cyan">&lt;body&gt;</span>
+        <span class="cyan">&lt;html&gt;</span>
                                 </code>
                             </pre>
                         </div>
     
                         <figure class="ds_figure">
                             <picture>
-                                <img src="../images/images-discovery-log/index.png" alt="index.png">
+                                <img src="./images/images-discovery-log/index.png" alt="index.png">
                             </picture>
     
-                            <figcaption class="ds_figure-caption">Index.png.</figcaption>
+                            <figcaption class="ds_figure-caption">First HTML5 Doc on VM</figcaption>
                         </figure>
                     </section>
                 </div>
@@ -302,18 +287,40 @@
                 
                 <div class="week_container">
                     <section id="week_15">
-                        <h2 class="week_heading">Fifteen: 15th -- 21st Jan</h2>
-                        <p id="week_15_p">Today; I learned nothing.</p>
+                        <h2 class="week_heading">Fifteen: 22nd -- 28th Jan</h2>
+                        <p id="week_15_p">Today; Friday 26/01/18, in this practical we focused on what the look of the site would look like with referencing to the 
+                        moodle site and the portsmouth university website to get a idea of how they work and how they change depending on how you are viewing them.
+                        This was our first venture into media queries to help change our site automatically depending on what kind of spec of device was looking at 
+                        our site and checking details such as how wide and tall the device was.</p>
                     </section>
                 </div>
 
                 <div class="week_container">
                     <section id="week_16">
                         <h2 class="week_heading">Sixteen: 22</h2>
-                        <p id="week_15_p">Today; 02/02/18, I learned nothing.</p>
+                        <p id="week_15_p">Today; Friday 02/02/18, this was a very different practical from normal as we had to work in groups and test our websites 
+                        and ourselves against physical impairments such as restricted hand movements and tunnel vision. We were then told to go to the bbc accessibility 
+                        site and see how well we could do and how we should change our sites to help improve the experience for these people.</p>
+
+                        <figure class="ds_figure">
+                            <picture>
+                                <img src="./images/images-discovery-log/visual_disability.jpg" alt="index.png">
+                            </picture>
+
+                            <figcaption class="ds_figure-caption">Visual Disability</figcaption>
+
+                            <picture>
+                                    <img src="./images/images-discovery-log/hand_disability.PNG" alt="index.png">
+                            </picture>
+    
+                            <figcaption class="ds_figure-caption">Hand Disability</figcaption>
+                        </figure>
                     </section>
                 </div>
             </article>
         </div>
+
+        <footer id="footer"></footer>
+        <script src="./scripts/footer.js"></script>
     </body>
 </html>
