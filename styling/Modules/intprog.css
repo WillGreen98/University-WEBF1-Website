@@ -1,0 +1,16 @@
+body {
+
+}
+
+#header_picture, #picture_img {
+    float: left: 0;
+}
+
+#picture_img {
+    width: 40%;
+}
+
+#map_div {
+    width: 100%;
+    height: 200px;
+}
